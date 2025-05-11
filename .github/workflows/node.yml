@@ -10,13 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps :
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Setup Node.js
+    
+      - name: Stepup Node.js
         uses: actions/setup-node@v3
-        with:
+        with: 
           node-version: '18'
 
       - name: Install dependencies
@@ -24,3 +24,5 @@ jobs:
 
       - name: Run tests
         run: npm test
+    
+    
